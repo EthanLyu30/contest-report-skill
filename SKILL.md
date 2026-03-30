@@ -65,6 +65,7 @@ Use this skill when the user asks for things like:
 - Prefer visuals extracted from the user's own source documents when they are already good enough. Only generate a new figure when the source materials do not provide a usable one.
 - If a new figure must be generated, keep all labels fully inside shapes, keep arrows tidy, and avoid cluttered crossings.
 - Do not write process explanations as stiff AI-style `1. 2. 3.` bullets unless the user explicitly asks for a numbered list. Prefer connected prose that introduces a figure or a table naturally.
+- Avoid formulaic connective chains such as repeated `首先` / `然后` / `最后` or rigid `一是` / `二是` / `三是` summaries unless the material truly requires explicit enumeration. Good contest prose should read naturally and vary its sentence rhythm.
 - Put figure and table titles below the object, and make sure the body text explicitly references them with phrases such as `如图x-x所示` or `如表x-x所示`.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
@@ -73,6 +74,7 @@ Use this skill when the user asks for things like:
 - When the source documents contain real platform screenshots, especially WSI annotation interfaces, task pages, or result views, prefer those screenshots in `概要设计` instead of relying only on architecture diagrams. Architecture alone is usually insufficient.
 - If several screenshots are all relevant but the template page budget is tight, prefer a clean combined figure board over deleting recent progress entirely.
 - When multiple extracted media folders exist, bind source images explicitly by document and purpose instead of relying on ambiguous directory auto-selection.
+- After rendering the final docx or PDF, look for awkward short wrap lines. If a rewritten paragraph leaves only one or two Chinese characters, or an obviously broken caption fragment, hanging on the next line, revise the wording or figure caption instead of leaving the line break as-is.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 
 ## Section Strategy

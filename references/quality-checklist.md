@@ -36,6 +36,7 @@ Run this checklist before treating a contest document as ready.
 - The body text explicitly references visuals with phrases such as `如图x-x所示` or `如表x-x所示`.
 - Paragraphs are concise and not overloaded with background theory.
 - Process descriptions read like human-written technical prose rather than AI-style `1. 2. 3.` bullet chains.
+- Summary paragraphs do not rely on stiff formulaic connector chains such as repeated `首先` / `然后` / `最后` or `一是` / `二是` / `三是`.
 - The narrative voice sounds like the submitting team speaking for the project, not like an AI or reviewer summarizing source materials.
 - Chinese prose does not contain unnecessary spaces next to adjacent English, numbers, or symbols.
 - Diagrams use consistent labels with the text.
@@ -46,6 +47,7 @@ Run this checklist before treating a contest document as ready.
 - `概要设计` is not just one architecture diagram plus one module table when richer source screenshots exist.
 - When the platform's key value lies in the workbench itself, the chapter shows the workbench in enough states or scales to make the interaction concrete.
 - Newer quarterly or milestone reports have been checked for updated functions, interfaces, or deployment constraints, and those updates are not accidentally lost behind older polished material.
+- Rendered pages do not contain obviously awkward short wrap lines where only one or two Chinese characters, or a tiny caption fragment, are stranded on the next line.
 
 ## Final Delivery
 
@@ -70,6 +72,8 @@ If any of these are true, the document still needs work:
 - the chapter has layered headings but almost no substantive paragraphs under them
 - the overview chapter contains architecture but barely any real platform interface evidence even though source screenshots are available
 - an older baseline report was followed mechanically and newer quarterly progress was ignored
+- the writing leans on repetitive connector formulas and sounds more like generated scaffolding than natural technical prose
+- a rendered page leaves one or two stray Chinese characters hanging on the next line and no one rewrote the sentence
 - the design chapters have almost no diagrams
 - the test section has no metrics or defect evidence
 - the project summary repeats earlier chapters
