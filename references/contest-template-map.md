@@ -17,8 +17,8 @@ Use this file when drafting or revising any section of a Chinese university soft
 
 Honor these defaults unless the user or a newer organizer template overrides them:
 
-- `需求分析`: suggested to stay within 1000 Chinese characters, preferably within about 300 characters plus a compact table when possible
-- `概要设计`: prefer figures over long prose; keep the overall section around 1 page and usually no more than 2 A4 pages
+- `需求分析`: keep it compact but not skeletal; if the source materials already support stronger argumentation, it is better to add one more solid paragraph or summary than to leave the chapter hollow
+- `概要设计`: prefer figures over long prose, but do not compress it so far that only one architecture figure and one module table remain; when the project has usable interface screenshots, let them share the load with the architecture view
 - `详细设计`: emphasize interfaces, database design, key algorithms, technical highlights, and typical usage flows; avoid long unfocused exposition
 - `测试报告`: keep it brief and evidence-driven
 - `安装及使用`: keep installation environment and common workflow short and runnable
@@ -37,6 +37,7 @@ Use this structure:
 5. one compact competitor comparison if competitors exist
 6. when a source document already has a strong demand-side image or screenshot, reuse it and reference it in the text before placing it
 7. keep the speaker identity stable: write as the project team, not as an observer explaining what the documents say
+8. do not stop at subheadings alone; give the chapter a closing paragraph that summarizes what the demand analysis proves and what it implies for later design
 
 Presentation rule:
 
@@ -45,6 +46,7 @@ Presentation rule:
 - avoid robotic numbered bullets when prose can explain the logic more naturally
 - avoid meta-source wording such as `结合技术报告...` or `从商业计划书中可以看出...`
 - do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose
+- treat the chapter title as centered if the template does so, but keep internal subheadings left aligned; prefer two-level headings unless the content truly needs a third level
 
 Avoid:
 
@@ -60,7 +62,8 @@ Use this structure:
 2. one diagram showing module relationships
 3. one diagram or table showing main interfaces or interaction flow
 4. one short explanation of why this decomposition fits the project
-5. if the project has already produced platform screenshots, architecture figures, or data-path figures, use them to show the key technical focus instead of relying on one thin paragraph
+5. if the project has already produced platform screenshots, architecture figures, WSI annotation views, task pages, or data-path figures, use them to show the key technical focus instead of relying on one thin paragraph
+6. when the workbench is central to the project, show the workbench from more than one scale or state if the source documents support it, such as full-slice view, local refinement view, and result view
 
 Presentation rule:
 
@@ -68,6 +71,7 @@ Presentation rule:
 - if the workflow is written in text, explain it as a connected process paragraph instead of `1. 2. 3.` bullet fragments
 - place figure and table captions below the object and cite them in the paragraph immediately before or after
 - keep the overview section rich enough to show the real highlights: architecture, key data path, module split, and at least one clear interaction or interface clue when the materials support it
+- do not let `概要设计` become architecture-only; if real platform screenshots exist, they should usually appear in this chapter
 
 Avoid:
 

@@ -17,7 +17,7 @@ Use this skill when the document must read like a polished Chinese competition s
    - one section draft
    - revision of an existing draft
    - final formatting and export
-3. When the user provides Word or PDF source documents, inspect not only the text but also the embedded figures, screenshots, table style, caption position, paragraph rhythm, and how the original team presents itself. Reuse good source visuals before generating new diagrams.
+3. When the user provides Word or PDF source documents, inspect not only the text but also the embedded figures, screenshots, table style, caption position, heading hierarchy, paragraph rhythm, and how the original team presents itself. Reuse good source visuals before generating new diagrams.
 4. Gather source material into these buckets:
    - project background and practical significance
    - target users and usage scenarios
@@ -51,6 +51,7 @@ Use this skill when the user asks for things like:
 ## Writing Rules
 
 - Keep the contest chapter names exactly as provided by the template unless the user explicitly asks to rename an internal heading.
+- Treat chapter title hierarchy explicitly. The main contest chapter titles such as `第一章 需求分析` and `第二章 概要设计` may remain centered, but internal subheadings should normally be left aligned. Use at most three levels, and prefer two levels when the material is not dense enough to justify deeper nesting.
 - Write as the project team submitting the work, not as an outside assistant summarizing source files. Prefer `我们设计…` / `我们将平台定位为…` and avoid meta phrases such as `结合技术报告可以看出…`.
 - Prefer formal Chinese academic style over startup pitch language.
 - Translate technical novelty into score-relevant language: feasibility, completeness, innovation, workload, demonstrability, and practical value.
@@ -65,6 +66,8 @@ Use this skill when the user asks for things like:
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
+- Do not let a section become "title-only". `需求分析` should usually close with a short summary paragraph that gathers the chapter's argument, and `概要设计` should usually show more than one kind of evidence when the source documents allow it.
+- When the source documents contain real platform screenshots, especially WSI annotation interfaces, task pages, or result views, prefer those screenshots in `概要设计` instead of relying only on architecture diagrams. Architecture alone is usually insufficient.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 
 ## Section Strategy
