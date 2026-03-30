@@ -19,6 +19,7 @@ Honor these defaults unless the user or a newer organizer template overrides the
 
 - `需求分析`: keep it compact but not skeletal; if the source materials already support stronger argumentation, it is better to add one more solid paragraph or summary than to leave the chapter hollow
 - `概要设计`: prefer figures over long prose, but do not compress it so far that only one architecture figure and one module table remain; when the project has usable interface screenshots, let them share the load with the architecture view
+- If the template recommends one to two pages, prefer denser combined figures and tighter tables before deleting concrete implementation evidence
 - `详细设计`: emphasize interfaces, database design, key algorithms, technical highlights, and typical usage flows; avoid long unfocused exposition
 - `测试报告`: keep it brief and evidence-driven
 - `安装及使用`: keep installation environment and common workflow short and runnable
@@ -38,6 +39,7 @@ Use this structure:
 6. when a source document already has a strong demand-side image or screenshot, reuse it and reference it in the text before placing it
 7. keep the speaker identity stable: write as the project team, not as an observer explaining what the documents say
 8. do not stop at subheadings alone; give the chapter a closing paragraph that summarizes what the demand analysis proves and what it implies for later design
+9. when the user expects numbered main chapters, render the chapter title as `第一章 需求分析` instead of a bare `需求分析`
 
 Presentation rule:
 
@@ -64,6 +66,7 @@ Use this structure:
 4. one short explanation of why this decomposition fits the project
 5. if the project has already produced platform screenshots, architecture figures, WSI annotation views, task pages, or data-path figures, use them to show the key technical focus instead of relying on one thin paragraph
 6. when the workbench is central to the project, show the workbench from more than one scale or state if the source documents support it, such as full-slice view, local refinement view, and result view
+7. when both an older polished report and a newer quarterly report exist, keep the older report as the wording baseline but let the newer report update the actual implemented functions and current interface state
 
 Presentation rule:
 
@@ -72,6 +75,7 @@ Presentation rule:
 - place figure and table captions below the object and cite them in the paragraph immediately before or after
 - keep the overview section rich enough to show the real highlights: architecture, key data path, module split, and at least one clear interaction or interface clue when the materials support it
 - do not let `概要设计` become architecture-only; if real platform screenshots exist, they should usually appear in this chapter
+- if space is tight but several screenshots are all important, merge them into one clean combined figure rather than dropping the newer interfaces
 
 Avoid:
 

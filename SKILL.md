@@ -18,7 +18,8 @@ Use this skill when the document must read like a polished Chinese competition s
    - revision of an existing draft
    - final formatting and export
 3. When the user provides Word or PDF source documents, inspect not only the text but also the embedded figures, screenshots, table style, caption position, heading hierarchy, paragraph rhythm, and how the original team presents itself. Reuse good source visuals before generating new diagrams.
-4. Gather source material into these buckets:
+4. If the user provides both a polished baseline document such as an AIC technical report and a newer milestone, quarterly, or progress report, treat the newer report as the source of truth for recently completed functions, interfaces, deployment constraints, and fresh technical progress.
+5. Gather source material into these buckets:
    - project background and practical significance
    - target users and usage scenarios
    - module boundaries and workflow
@@ -27,15 +28,16 @@ Use this skill when the document must read like a polished Chinese competition s
    - tests, metrics, and fixes
    - installation, deployment, and typical usage
    - team division, project reflections, and next steps
-5. Map the material into the contest sections using `references/contest-template-map.md`. Keep the contest's Chinese chapter names instead of rewriting the document as a generic English SRS.
-6. Raise rigor selectively:
+6. Map the material into the contest sections using `references/contest-template-map.md`. Keep the contest's Chinese chapter names instead of rewriting the document as a generic English SRS.
+7. Raise rigor selectively:
    - borrow requirement precision from `jam01/SRS-Template`
    - borrow design structure from IEEE 1016 and software design document templates
    - borrow discovery and architecture thinking from business analyst, product manager, and architect style workflows
    - borrow security and privacy questions for sensitive or medical systems
-7. Write concise Chinese academic prose. Prefer figures, tables, UML, ER, flowcharts, and real screenshots over long explanation blocks, especially in 概要设计 and 详细设计.
-8. When generating Chinese `.docx` content programmatically, avoid shell-embedded non-ASCII code blocks that can be downgraded to `?` by the console code page. Prefer UTF-8 script files, relative workspace paths, and a post-save reopen check on the generated document.
-9. If the user needs a final `.docx` or PDF, use the `doc` skill for document editing and the `pdf` skill for render checks before delivery.
+8. Write concise Chinese academic prose. Prefer figures, tables, UML, ER, flowcharts, and real screenshots over long explanation blocks, especially in 概要设计 and 详细设计.
+9. When the template asks for a short section, compress by increasing information density rather than by deleting all specificity. Prefer combined figure boards, compact comparison tables, and short synthesis paragraphs over hollow prose.
+10. When generating Chinese `.docx` content programmatically, avoid shell-embedded non-ASCII code blocks that can be downgraded to `?` by the console code page. Prefer UTF-8 script files, relative workspace paths, and a post-save reopen check on the generated document.
+11. If the user needs a final `.docx` or PDF, use the `doc` skill for document editing and the `pdf` skill for render checks before delivery.
 
 ## Trigger Cases
 
@@ -52,6 +54,7 @@ Use this skill when the user asks for things like:
 
 - Keep the contest chapter names exactly as provided by the template unless the user explicitly asks to rename an internal heading.
 - Treat chapter title hierarchy explicitly. The main contest chapter titles such as `第一章 需求分析` and `第二章 概要设计` may remain centered, but internal subheadings should normally be left aligned. Use at most three levels, and prefer two levels when the material is not dense enough to justify deeper nesting.
+- If the user or local template expects numbered main chapters, use full chapter titles such as `第一章 需求分析` rather than bare section names.
 - Write as the project team submitting the work, not as an outside assistant summarizing source files. Prefer `我们设计…` / `我们将平台定位为…` and avoid meta phrases such as `结合技术报告可以看出…`.
 - Prefer formal Chinese academic style over startup pitch language.
 - Translate technical novelty into score-relevant language: feasibility, completeness, innovation, workload, demonstrability, and practical value.
@@ -68,6 +71,8 @@ Use this skill when the user asks for things like:
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
 - Do not let a section become "title-only". `需求分析` should usually close with a short summary paragraph that gathers the chapter's argument, and `概要设计` should usually show more than one kind of evidence when the source documents allow it.
 - When the source documents contain real platform screenshots, especially WSI annotation interfaces, task pages, or result views, prefer those screenshots in `概要设计` instead of relying only on architecture diagrams. Architecture alone is usually insufficient.
+- If several screenshots are all relevant but the template page budget is tight, prefer a clean combined figure board over deleting recent progress entirely.
+- When multiple extracted media folders exist, bind source images explicitly by document and purpose instead of relying on ambiguous directory auto-selection.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 
 ## Section Strategy

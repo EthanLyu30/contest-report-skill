@@ -41,9 +41,11 @@ Run this checklist before treating a contest document as ready.
 - Diagrams use consistent labels with the text.
 - Screenshots reflect the real system instead of placeholder mockups when possible.
 - Main chapter titles follow the template's centered style, while internal hierarchical headings are kept left aligned and restrained to a sensible depth.
+- If the local template or user expects numbered main chapters, the final document actually uses titles such as `第一章 需求分析`, `第二章 概要设计`, and so on.
 - `需求分析` does not stop after listing subheadings and tables; it ends with a short concluding paragraph that gathers the chapter argument.
 - `概要设计` is not just one architecture diagram plus one module table when richer source screenshots exist.
 - When the platform's key value lies in the workbench itself, the chapter shows the workbench in enough states or scales to make the interaction concrete.
+- Newer quarterly or milestone reports have been checked for updated functions, interfaces, or deployment constraints, and those updates are not accidentally lost behind older polished material.
 
 ## Final Delivery
 
@@ -67,6 +69,7 @@ If any of these are true, the document still needs work:
 - the overview section looks thin, generic, or unsupported by visuals even though the source documents contain usable figures
 - the chapter has layered headings but almost no substantive paragraphs under them
 - the overview chapter contains architecture but barely any real platform interface evidence even though source screenshots are available
+- an older baseline report was followed mechanically and newer quarterly progress was ignored
 - the design chapters have almost no diagrams
 - the test section has no metrics or defect evidence
 - the project summary repeats earlier chapters
