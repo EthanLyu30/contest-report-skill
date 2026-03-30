@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contest Report"
+  short_description: "Draft high-quality contest reports"
+  default_prompt: "Use $contest-report to draft or refine a Chinese university software competition design and development report."
