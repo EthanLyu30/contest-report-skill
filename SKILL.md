@@ -1,13 +1,13 @@
 ---
 name: contest-report
-description: Use when drafting, revising, or polishing a Chinese university computer design contest software design and development document, especially "软件应用与开发类作品设计和开发文档", local organizer or teacher docx templates, and reports that must map material into sections such as 需求分析, 概要设计, 详细设计, 测试报告, 安装及使用, 项目总结, and 参考文献.
+description: Use when drafting, revising, or polishing a Chinese university competition-style software design and development document, especially documents that follow contest, capstone, innovation, or teacher-issued templates and must map material into sections such as 需求分析, 概要设计, 详细设计, 测试报告, 安装及使用, 项目总结, and 参考文献.
 ---
 
 # Contest Report
 
 ## Overview
 
-Use this skill when the document must read like a polished Chinese competition submission instead of a generic enterprise PRD or SRS. It adapts SRS, PRD, and architecture material into contest-ready Chinese prose, tables, diagrams, and final docx or pdf deliverables.
+Use this skill when the document must read like a polished Chinese competition or project submission instead of a generic enterprise PRD or SRS. It adapts SRS, PRD, and architecture material into contest-ready Chinese prose, tables, diagrams, and final docx or pdf deliverables.
 
 ## Workflow
 
@@ -68,6 +68,8 @@ Use this skill when the user asks for things like:
 - Avoid formulaic connective chains such as repeated `首先` / `然后` / `最后` or rigid `一是` / `二是` / `三是` summaries unless the material truly requires explicit enumeration. Good contest prose should read naturally and vary its sentence rhythm.
 - Avoid dialogue-like wrap-up lines that sound as if the writer is speaking to the reader about the writing process, such as `这一章把……交代清楚了` or `接下来我们……`. Section endings should still read as part of the submitted document.
 - Put figure and table titles below the object, and make sure the body text explicitly references them with phrases such as `如图x-x所示` or `如表x-x所示`.
+- In page-constrained chapters, do not default to equal-width table columns. Allocate width by information density so that dense explanatory columns get more space and short label columns stay narrow.
+- Keep tables as intact as possible. Avoid letting a table split across pages, and try to keep the table body and its below-caption on the same page; only allow跨页 when the content truly cannot fit after compaction.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
@@ -77,6 +79,7 @@ Use this skill when the user asks for things like:
 - If several screenshots are all relevant but the template page budget is tight, prefer a clean combined figure board over deleting recent progress entirely.
 - When multiple extracted media folders exist, bind source images explicitly by document and purpose instead of relying on ambiguous directory auto-selection.
 - After rendering the final docx or PDF, look for awkward short wrap lines. If a rewritten paragraph leaves only one or two Chinese characters, or an obviously broken caption fragment, hanging on the next line, revise the wording or figure caption instead of leaving the line break as-is.
+- If a chapter has a tight page budget, prefer merging a short concluding thought into the preceding paragraph over adding a new mini-section or leaving an underfilled block.
 - Do not overuse a single subject term such as `平台`. When the meaning stays the same, vary references naturally across `医标智绘`、`本作品`、`系统`、`该协作平台` and similar expressions, but keep the referent clear.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 
