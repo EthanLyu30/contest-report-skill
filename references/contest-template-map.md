@@ -40,6 +40,7 @@ Use this structure:
 7. keep the speaker identity stable: write as the project team, not as an observer explaining what the documents say
 8. do not stop at subheadings alone; give the chapter a closing paragraph that summarizes what the demand analysis proves and what it implies for later design
 9. when the user expects numbered main chapters, render the chapter title as `第一章 需求分析` instead of a bare `需求分析`
+10. if the chapter ending is only a short paragraph, do not force a separate `本章小结` subheading just for formality
 
 Presentation rule:
 
@@ -47,9 +48,11 @@ Presentation rule:
 - place figure and table captions below the object, not above it
 - avoid robotic numbered bullets when prose can explain the logic more naturally
 - avoid stiff connective formulas such as repeated `首先` / `然后` / `最后` or summary chains like `一是` / `二是` / `三是` when a smoother paragraph will read more like a real contest submission
+- avoid chapter-ending lines that sound like the writer is talking to the reader about the writing process
 - avoid meta-source wording such as `结合技术报告...` or `从商业计划书中可以看出...`
 - do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose
 - treat the chapter title as centered if the template does so, but keep internal subheadings left aligned; prefer two-level headings unless the content truly needs a third level
+- vary the subject naming naturally; do not repeat `平台` in every sentence when `医标智绘`、`系统`、`本作品` or `该协作平台` would read better
 
 Avoid:
 
@@ -78,6 +81,7 @@ Presentation rule:
 - do not let `概要设计` become architecture-only; if real platform screenshots exist, they should usually appear in this chapter
 - if space is tight but several screenshots are all important, merge them into one clean combined figure rather than dropping the newer interfaces
 - after layout is rendered, scan for ugly wrap behavior; if a caption or paragraph leaves only one or two Chinese characters on a new line, rewrite the sentence or shorten the caption
+- if the chapter ends with only a brief收束段, merge it into the end of the section instead of adding a standalone `本章小结` heading
 
 Avoid:
 

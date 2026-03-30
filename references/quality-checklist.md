@@ -37,6 +37,7 @@ Run this checklist before treating a contest document as ready.
 - Paragraphs are concise and not overloaded with background theory.
 - Process descriptions read like human-written technical prose rather than AI-style `1. 2. 3.` bullet chains.
 - Summary paragraphs do not rely on stiff formulaic connector chains such as repeated `首先` / `然后` / `最后` or `一是` / `二是` / `三是`.
+- Section endings do not sound like the writer is talking to the reader about the act of writing.
 - The narrative voice sounds like the submitting team speaking for the project, not like an AI or reviewer summarizing source materials.
 - Chinese prose does not contain unnecessary spaces next to adjacent English, numbers, or symbols.
 - Diagrams use consistent labels with the text.
@@ -48,6 +49,8 @@ Run this checklist before treating a contest document as ready.
 - When the platform's key value lies in the workbench itself, the chapter shows the workbench in enough states or scales to make the interaction concrete.
 - Newer quarterly or milestone reports have been checked for updated functions, interfaces, or deployment constraints, and those updates are not accidentally lost behind older polished material.
 - Rendered pages do not contain obviously awkward short wrap lines where only one or two Chinese characters, or a tiny caption fragment, are stranded on the next line.
+- If a short summary paragraph exists, it is merged naturally into the end of the chapter rather than being given an empty-feeling standalone `本章小结` heading.
+- Repeated references to the project use varied but clear subjects instead of mechanically repeating `平台` in sentence after sentence.
 
 ## Final Delivery
 
@@ -73,6 +76,8 @@ If any of these are true, the document still needs work:
 - the overview chapter contains architecture but barely any real platform interface evidence even though source screenshots are available
 - an older baseline report was followed mechanically and newer quarterly progress was ignored
 - the writing leans on repetitive connector formulas and sounds more like generated scaffolding than natural technical prose
+- the closing paragraph sounds like the author is speaking to the reviewer about what the chapter just did
+- the document keeps creating tiny standalone `本章小结` headings for one-sentence conclusions even under tight page limits
 - a rendered page leaves one or two stray Chinese characters hanging on the next line and no one rewrote the sentence
 - the design chapters have almost no diagrams
 - the test section has no metrics or defect evidence

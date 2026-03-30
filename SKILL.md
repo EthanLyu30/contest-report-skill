@@ -66,15 +66,18 @@ Use this skill when the user asks for things like:
 - If a new figure must be generated, keep all labels fully inside shapes, keep arrows tidy, and avoid cluttered crossings.
 - Do not write process explanations as stiff AI-style `1. 2. 3.` bullets unless the user explicitly asks for a numbered list. Prefer connected prose that introduces a figure or a table naturally.
 - Avoid formulaic connective chains such as repeated `首先` / `然后` / `最后` or rigid `一是` / `二是` / `三是` summaries unless the material truly requires explicit enumeration. Good contest prose should read naturally and vary its sentence rhythm.
+- Avoid dialogue-like wrap-up lines that sound as if the writer is speaking to the reader about the writing process, such as `这一章把……交代清楚了` or `接下来我们……`. Section endings should still read as part of the submitted document.
 - Put figure and table titles below the object, and make sure the body text explicitly references them with phrases such as `如图x-x所示` or `如表x-x所示`.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
 - Do not let a section become "title-only". `需求分析` should usually close with a short summary paragraph that gathers the chapter's argument, and `概要设计` should usually show more than one kind of evidence when the source documents allow it.
+- If a chapter summary is only one short paragraph and the template is page-constrained, fold it into the chapter ending instead of creating a separate `本章小结` subheading.
 - When the source documents contain real platform screenshots, especially WSI annotation interfaces, task pages, or result views, prefer those screenshots in `概要设计` instead of relying only on architecture diagrams. Architecture alone is usually insufficient.
 - If several screenshots are all relevant but the template page budget is tight, prefer a clean combined figure board over deleting recent progress entirely.
 - When multiple extracted media folders exist, bind source images explicitly by document and purpose instead of relying on ambiguous directory auto-selection.
 - After rendering the final docx or PDF, look for awkward short wrap lines. If a rewritten paragraph leaves only one or two Chinese characters, or an obviously broken caption fragment, hanging on the next line, revise the wording or figure caption instead of leaving the line break as-is.
+- Do not overuse a single subject term such as `平台`. When the meaning stays the same, vary references naturally across `医标智绘`、`本作品`、`系统`、`该协作平台` and similar expressions, but keep the referent clear.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 
 ## Section Strategy
