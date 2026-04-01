@@ -18,6 +18,7 @@ Use this file when drafting or revising any section of a Chinese university soft
 Honor these defaults unless the user or a newer organizer template overrides them:
 
 - If the organizer gives explicit document formatting rules, those rules override earlier house preferences for fonts, title hierarchy, or spacing
+- If those rules specify pure `宋体/黑体` usage, do not preserve an older mixed-font habit for English and numbers in the final visible text
 
 - `需求分析`: keep it compact but not skeletal; if the source materials already support stronger argumentation, it is better to add one more solid paragraph or summary than to leave the chapter hollow
 - `概要设计`: prefer figures over long prose, but do not compress it so far that only one architecture figure and one module table remain; when the project has usable interface screenshots, let them share the load with the architecture view
@@ -55,6 +56,7 @@ Presentation rule:
 - do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose
 - treat the chapter title as centered if the template does so, but keep internal subheadings left aligned; prefer two-level headings unless the content truly needs a third level
 - vary the subject naming naturally; do not repeat `平台` in every sentence when `医标智绘`、`系统`、`本作品` or `该协作平台` would read better
+- if the chapter will end before the next main chapter starts on a new page, re-compact the chapter so the previous page does not end with a single dangling line or a large avoidable blank block
 
 Avoid:
 
@@ -115,6 +117,7 @@ A strong compact test section usually includes:
 - 3 to 6 representative test cases
 - at least one bug or defect and how it was corrected
 - measurable results carried by prose, with tables used only when they genuinely clarify rather than bloat the section
+- at most one compact summary table or figure when it improves scanability without taking over the section
 - one compact synthesis of performance, compatibility, and修正效果 when the template page budget is tight
 
 Avoid:
@@ -133,6 +136,7 @@ Include:
 - default usage path
 - one typical scenario from login to result output
 - repository-backed commands, directories, and feature usage notes drawn from the real codebase, README, settings, or usage documents
+- wording that still sounds like the submitting team documenting its own system rather than an assistant describing repository contents
 
 Avoid:
 
@@ -140,6 +144,7 @@ Avoid:
 - repeating testing content
 - omitting browser, database, GPU, or model dependency requirements when they matter
 - inventing steps that cannot be traced back to the real project repository
+- leaving long command names inside justified prose when moving them to a separate command line would read cleaner
 
 ### 项目总结
 

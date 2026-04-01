@@ -8,6 +8,7 @@ Run this checklist before treating a contest document as ready.
 - Each chapter answers the local prompt instead of drifting into generic SRS wording.
 - The document feels like a competition submission, not an enterprise specification dump.
 - If the organizer has explicit formatting rules, those rules override older default formatting preferences and are reflected in the final docx and PDF.
+- If the organizer specifies `正文宋体、标题黑体` or a similar pure-font hierarchy, the final visible runs in Word actually reflect that hierarchy instead of preserving an older mixed-font convention.
 
 ## Content Quality
 
@@ -59,8 +60,12 @@ Run this checklist before treating a contest document as ready.
 - Repeated references to the project use varied but clear subjects instead of mechanically repeating `平台` in sentence after sentence.
 - A chapter the user already considers acceptable has been migrated and reformatted carefully rather than rewritten into a weaker version.
 - `测试报告` reads like measured validation and修正复盘, not like a stack of table shells.
+- `测试报告` may include one compact summary table or figure, but prose remains the backbone and the layout does not regress into table stacking.
 - `安装及使用` is grounded in the real code repository and usage docs instead of generic framework habits.
+- `安装及使用` still sounds like the team presenting its own deployment path, not like an external narrator pointing at the repository.
 - `第七章 参考文献` appears before the reference entries and is not separated from them by insertion-order mistakes.
+- If each chapter starts on a new page, the previous page does not end with a single orphan line or an obviously oversized blank area that should have been compressed away.
+- Word opens in a normal reading/printing state rather than exposing leftover review markup settings from the template.
 
 ## Final Delivery
 
@@ -97,4 +102,7 @@ If any of these are true, the document still needs work:
 - the project summary repeats earlier chapters
 - medical or AI claims are present but data handling and human review are absent
 - the organizer's explicit font hierarchy is ignored because an older private formatting preference was followed instead
+- the document claims to follow `宋体/黑体` organizer rules, but Word still shows `SimSun`-style leftovers or mixed western fonts because the runs were only half-updated
 - installation steps look plausible but cannot be traced back to the real repository, README, settings, or usage guide
+- a forced chapter page break leaves the previous page with a dangling last line or a large avoidable blank block
+- Word opens with review markup turned on even though the final deliverable is meant for ordinary reading

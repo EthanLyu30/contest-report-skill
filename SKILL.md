@@ -13,6 +13,7 @@ Use this skill when the document must read like a polished Chinese competition o
 
 1. Read the local contest template and submission requirement files first. Treat chapter names, length hints, and deliverable format as hard constraints.
    - If the organizer or teacher gives explicit typography rules such as `一级标题二号黑体、二级标题三号黑体、正文五号宋体`, those rules override any default house style from earlier drafts.
+   - When the organizer expects pure `宋体/黑体` formatting, do not keep an older mixed-font habit such as `中文宋体、英文数字Times New Roman`; the official contest format wins.
 2. Decide the current objective before writing:
    - full outline
    - one section draft
@@ -77,6 +78,7 @@ Use this skill when the user asks for things like:
 - When tables still look too tall, compact them in this order: shorten cell wording, reduce internal cell margins and paragraph spacing, then rebalance column widths. Do not leave a bloated table simply because the columns were adjusted once.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - If the competition requirement gives a document-wide format rule, that rule overrides earlier default formatting preferences for body text, title fonts, or spacing.
+- If the official format says `正文五号宋体` or similar, apply that font family consistently to the final visible runs instead of keeping a half-overridden style that still shows `SimSun` or mixed western fonts in Word.
 - When the source draft already contains a later chapter the user considers acceptable, migrate its substance, figures, and structure into the current version instead of rewriting it from scratch.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
@@ -90,8 +92,13 @@ Use this skill when the user asks for things like:
 - Do not overuse a single subject term such as `平台`. When the meaning stays the same, vary references naturally across `医标智绘`、`本作品`、`系统`、`该协作平台` and similar expressions, but keep the referent clear.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 - Do not let `测试报告` degrade into a pile of weak tables. When measured data and修正记录 are available, weave them into natural prose so the section reads like real engineering validation.
+- `测试报告` can still include one compact summary table or figure when that improves readability, but the section should not collapse back into table stacking.
 - When writing `安装及使用`, ground every command, dependency, and path in the real code repository, README, settings, and feature usage notes. Do not invent deployment steps from generic project habits.
+- Even when installation content is derived from the repository, the wording should still sound like the project team submitting the work, not like an assistant explaining what the repository contains.
 - Make sure the structural order remains correct after automated insertion. Headings such as `第七章 参考文献` must appear before their entries rather than being stranded after them.
+- If the document style expects each main chapter to begin on a new page, add page breaks deliberately and then re-compact the previous chapter so it does not leave an orphan line or a large blank block at the bottom.
+- If justified paragraphs contain long English commands or identifiers and produce ugly broken spacing, split the sentence or move the command to its own line instead of forcing the paragraph to carry everything.
+- Final delivery quality includes the opening state in Word. Turn off track-revision behavior and hidden markup views when the template accidentally leaves the document opening in a review-oriented state.
 
 ## Section Strategy
 
