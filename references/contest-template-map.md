@@ -49,6 +49,7 @@ Presentation rule:
 
 - lead into visuals with sentences like `如图1-1所示` or `如表1-1所示`
 - place figure and table captions below the object, not above it
+- if a table or figure is forced onto the next page while the previous page still leaves a suspicious blank block, inspect and remove hidden template page breaks before continuing to cut text
 - avoid robotic numbered bullets when prose can explain the logic more naturally
 - avoid stiff connective formulas such as repeated `首先` / `然后` / `最后` or summary chains like `一是` / `二是` / `三是` when a smoother paragraph will read more like a real contest submission
 - avoid chapter-ending lines that sound like the writer is talking to the reader about the writing process
@@ -136,6 +137,7 @@ Include:
 - default usage path
 - one typical scenario from login to result output
 - repository-backed commands, directories, and feature usage notes drawn from the real codebase, README, settings, or usage documents
+- when possible, include screenshots from the real running project, such as the landing page, login page, workbench, or startup terminal, so the section documents an actual executable state rather than a purely textual setup path
 - wording that still sounds like the submitting team documenting its own system rather than an assistant describing repository contents
 
 Avoid:

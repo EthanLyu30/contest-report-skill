@@ -41,6 +41,7 @@ Run this checklist before treating a contest document as ready.
 - Tables that still look tall have also been compacted through wording, internal margins, and paragraph spacing rather than only by dragging column widths.
 - Page-constrained tables are kept as intact as possible, and table captions are not casually pushed onto the next page.
 - Paragraphs are concise and not overloaded with background theory.
+- Large blank regions at the bottom of a page have been checked for hidden manual page breaks or keep-with-next residue from the template, not only for paragraph length.
 - Process descriptions read like human-written technical prose rather than AI-style `1. 2. 3.` bullet chains.
 - Summary paragraphs do not rely on stiff formulaic connector chains such as repeated `首先` / `然后` / `最后` or `一是` / `二是` / `三是`.
 - Section endings do not sound like the writer is talking to the reader about the act of writing.
@@ -66,6 +67,9 @@ Run this checklist before treating a contest document as ready.
 - `第七章 参考文献` appears before the reference entries and is not separated from them by insertion-order mistakes.
 - If each chapter starts on a new page, the previous page does not end with a single orphan line or an obviously oversized blank area that should have been compressed away.
 - Word opens in a normal reading/printing state rather than exposing leftover review markup settings from the template.
+- If Word should display `宋体/黑体`, the reopened style definitions and visible runs have been checked for theme-font residue instead of assuming the font alias issue will fix itself.
+- Tables still show clear visible grid lines after PDF export rather than relying on a border style that disappears in rendering.
+- Later chapters are not visually starved; if the real project can be launched, runtime screenshots or terminal captures have been considered for installation, usage, or validation sections.
 
 ## Final Delivery
 
@@ -97,12 +101,15 @@ If any of these are true, the document still needs work:
 - the chapter heading shows `第一章` in a visibly different font or size from the chapter name because template auto-numbering was left untouched
 - a table is split across pages mainly because column widths stayed default and no one compacted the layout
 - the table caption is stranded on the next page even though the table itself could have been compacted or moved as a whole
+- a large blank region remains before a table or figure because a hidden template page break was left in place
 - the design chapters have almost no diagrams
 - the test section is mostly hollow tables with little narrative, metrics, or defect evidence
 - the project summary repeats earlier chapters
 - medical or AI claims are present but data handling and human review are absent
 - the organizer's explicit font hierarchy is ignored because an older private formatting preference was followed instead
 - the document claims to follow `宋体/黑体` organizer rules, but Word still shows `SimSun`-style leftovers or mixed western fonts because the runs were only half-updated
+- the table style name says there should be borders, but the rendered PDF still looks borderless
 - installation steps look plausible but cannot be traced back to the real repository, README, settings, or usage guide
+- the back half of the report becomes text-only even though the running system could have supplied real screenshots
 - a forced chapter page break leaves the previous page with a dangling last line or a large avoidable blank block
 - Word opens with review markup turned on even though the final deliverable is meant for ordinary reading

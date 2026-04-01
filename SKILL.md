@@ -76,9 +76,12 @@ Use this skill when the user asks for things like:
 - In page-constrained chapters, do not default to equal-width table columns. Allocate width by information density so that dense explanatory columns get more space and short label columns stay narrow.
 - Keep tables as intact as possible. Avoid letting a table split across pages, and try to keep the table body and its below-caption on the same page; only allow跨页 when the content truly cannot fit after compaction.
 - When tables still look too tall, compact them in this order: shorten cell wording, reduce internal cell margins and paragraph spacing, then rebalance column widths. Do not leave a bloated table simply because the columns were adjusted once.
+- If a page shows a large avoidable blank block before a table or figure, do not assume the content is merely "too long". Check for inherited manual page breaks, keep-with-next chains, or other template residue before rewriting the prose.
+- Do not rely on a table style name alone for visible borders. If the rendered effect still looks borderless, set explicit table border XML so the final PDF keeps clear grid lines.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - If the competition requirement gives a document-wide format rule, that rule overrides earlier default formatting preferences for body text, title fonts, or spacing.
 - If the official format says `正文五号宋体` or similar, apply that font family consistently to the final visible runs instead of keeping a half-overridden style that still shows `SimSun` or mixed western fonts in Word.
+- When Word still appears to show a `SimSun`-style alias after restyling, clear theme-font residue and verify the reopened `Normal` and heading styles carry explicit `宋体/黑体` rFonts rather than assuming the first save was enough.
 - When the source draft already contains a later chapter the user considers acceptable, migrate its substance, figures, and structure into the current version instead of rewriting it from scratch.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
@@ -95,6 +98,8 @@ Use this skill when the user asks for things like:
 - `测试报告` can still include one compact summary table or figure when that improves readability, but the section should not collapse back into table stacking.
 - When writing `安装及使用`, ground every command, dependency, and path in the real code repository, README, settings, and feature usage notes. Do not invent deployment steps from generic project habits.
 - Even when installation content is derived from the repository, the wording should still sound like the project team submitting the work, not like an assistant explaining what the repository contains.
+- When the later chapters feel visually thin, supplement them with screenshots from the real running system, such as actual page renders, logged-in interfaces, and startup terminal captures, instead of leaving the back half of the document as pure text.
+- If a terminal screenshot is used, crop it to the meaningful runtime output region so window chrome, stray side panels, or unrelated console noise do not weaken the delivery.
 - Make sure the structural order remains correct after automated insertion. Headings such as `第七章 参考文献` must appear before their entries rather than being stranded after them.
 - If the document style expects each main chapter to begin on a new page, add page breaks deliberately and then re-compact the previous chapter so it does not leave an orphan line or a large blank block at the bottom.
 - If justified paragraphs contain long English commands or identifiers and produce ugly broken spacing, split the sentence or move the command to its own line instead of forcing the paragraph to carry everything.
