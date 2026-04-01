@@ -12,6 +12,7 @@ Use this skill when the document must read like a polished Chinese competition o
 ## Workflow
 
 1. Read the local contest template and submission requirement files first. Treat chapter names, length hints, and deliverable format as hard constraints.
+   - If the organizer or teacher gives explicit typography rules such as `一级标题二号黑体、二级标题三号黑体、正文五号宋体`, those rules override any default house style from earlier drafts.
 2. Decide the current objective before writing:
    - full outline
    - one section draft
@@ -28,16 +29,18 @@ Use this skill when the document must read like a polished Chinese competition o
    - tests, metrics, and fixes
    - installation, deployment, and typical usage
    - team division, project reflections, and next steps
+   - repository-backed deployment facts and runnable usage steps when the report contains `安装及使用`
 6. Map the material into the contest sections using `references/contest-template-map.md`. Keep the contest's Chinese chapter names instead of rewriting the document as a generic English SRS.
-7. Raise rigor selectively:
+7. If the user already has a partially satisfactory chapter, treat that chapter as a baseline to migrate and refit instead of rewriting it from scratch just to unify the voice.
+8. Raise rigor selectively:
    - borrow requirement precision from `jam01/SRS-Template`
    - borrow design structure from IEEE 1016 and software design document templates
    - borrow discovery and architecture thinking from business analyst, product manager, and architect style workflows
    - borrow security and privacy questions for sensitive or medical systems
-8. Write concise Chinese academic prose. Prefer figures, tables, UML, ER, flowcharts, and real screenshots over long explanation blocks, especially in 概要设计 and 详细设计.
-9. When the template asks for a short section, compress by increasing information density rather than by deleting all specificity. Prefer combined figure boards, compact comparison tables, and short synthesis paragraphs over hollow prose.
-10. When generating Chinese `.docx` content programmatically, avoid shell-embedded non-ASCII code blocks that can be downgraded to `?` by the console code page. Prefer UTF-8 script files, relative workspace paths, and a post-save reopen check on the generated document.
-11. If the user needs a final `.docx` or PDF, use the `doc` skill for document editing and the `pdf` skill for render checks before delivery.
+9. Write concise Chinese academic prose. Prefer figures, tables, UML, ER, flowcharts, and real screenshots over long explanation blocks, especially in 概要设计 and 详细设计.
+10. When the template asks for a short section, compress by increasing information density rather than by deleting all specificity. Prefer combined figure boards, compact comparison tables, and short synthesis paragraphs over hollow prose.
+11. When generating Chinese `.docx` content programmatically, avoid shell-embedded non-ASCII code blocks that can be downgraded to `?` by the console code page. Prefer UTF-8 script files, relative workspace paths, and a post-save reopen check on the generated document.
+12. If the user needs a final `.docx` or PDF, use the `doc` skill for document editing and the `pdf` skill for render checks before delivery.
 
 ## Trigger Cases
 
@@ -73,6 +76,8 @@ Use this skill when the user asks for things like:
 - Keep tables as intact as possible. Avoid letting a table split across pages, and try to keep the table body and its below-caption on the same page; only allow跨页 when the content truly cannot fit after compaction.
 - When tables still look too tall, compact them in this order: shorten cell wording, reduce internal cell margins and paragraph spacing, then rebalance column widths. Do not leave a bloated table simply because the columns were adjusted once.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
+- If the competition requirement gives a document-wide format rule, that rule overrides earlier default formatting preferences for body text, title fonts, or spacing.
+- When the source draft already contains a later chapter the user considers acceptable, migrate its substance, figures, and structure into the current version instead of rewriting it from scratch.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
 - Do not let a section become "title-only". `需求分析` should usually close with a short summary paragraph that gathers the chapter's argument, and `概要设计` should usually show more than one kind of evidence when the source documents allow it.
@@ -84,6 +89,9 @@ Use this skill when the user asks for things like:
 - If a chapter has a tight page budget, prefer merging a short concluding thought into the preceding paragraph over adding a new mini-section or leaving an underfilled block.
 - Do not overuse a single subject term such as `平台`. When the meaning stays the same, vary references naturally across `医标智绘`、`本作品`、`系统`、`该协作平台` and similar expressions, but keep the referent clear.
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
+- Do not let `测试报告` degrade into a pile of weak tables. When measured data and修正记录 are available, weave them into natural prose so the section reads like real engineering validation.
+- When writing `安装及使用`, ground every command, dependency, and path in the real code repository, README, settings, and feature usage notes. Do not invent deployment steps from generic project habits.
+- Make sure the structural order remains correct after automated insertion. Headings such as `第七章 参考文献` must appear before their entries rather than being stranded after them.
 
 ## Section Strategy
 

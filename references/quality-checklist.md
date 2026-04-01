@@ -7,6 +7,7 @@ Run this checklist before treating a contest document as ready.
 - The chapter names match the contest or teacher template exactly.
 - Each chapter answers the local prompt instead of drifting into generic SRS wording.
 - The document feels like a competition submission, not an enterprise specification dump.
+- If the organizer has explicit formatting rules, those rules override older default formatting preferences and are reflected in the final docx and PDF.
 
 ## Content Quality
 
@@ -56,6 +57,10 @@ Run this checklist before treating a contest document as ready.
 - When a page budget is tight, short concluding thoughts are folded into the surrounding paragraph instead of being turned into thin standalone blocks.
 - If a short summary paragraph exists, it is merged naturally into the end of the chapter rather than being given an empty-feeling standalone `本章小结` heading.
 - Repeated references to the project use varied but clear subjects instead of mechanically repeating `平台` in sentence after sentence.
+- A chapter the user already considers acceptable has been migrated and reformatted carefully rather than rewritten into a weaker version.
+- `测试报告` reads like measured validation and修正复盘, not like a stack of table shells.
+- `安装及使用` is grounded in the real code repository and usage docs instead of generic framework habits.
+- `第七章 参考文献` appears before the reference entries and is not separated from them by insertion-order mistakes.
 
 ## Final Delivery
 
@@ -88,6 +93,8 @@ If any of these are true, the document still needs work:
 - a table is split across pages mainly because column widths stayed default and no one compacted the layout
 - the table caption is stranded on the next page even though the table itself could have been compacted or moved as a whole
 - the design chapters have almost no diagrams
-- the test section has no metrics or defect evidence
+- the test section is mostly hollow tables with little narrative, metrics, or defect evidence
 - the project summary repeats earlier chapters
 - medical or AI claims are present but data handling and human review are absent
+- the organizer's explicit font hierarchy is ignored because an older private formatting preference was followed instead
+- installation steps look plausible but cannot be traced back to the real repository, README, settings, or usage guide

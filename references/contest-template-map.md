@@ -17,6 +17,8 @@ Use this file when drafting or revising any section of a Chinese university soft
 
 Honor these defaults unless the user or a newer organizer template overrides them:
 
+- If the organizer gives explicit document formatting rules, those rules override earlier house preferences for fonts, title hierarchy, or spacing
+
 - `需求分析`: keep it compact but not skeletal; if the source materials already support stronger argumentation, it is better to add one more solid paragraph or summary than to leave the chapter hollow
 - `概要设计`: prefer figures over long prose, but do not compress it so far that only one architecture figure and one module table remain; when the project has usable interface screenshots, let them share the load with the architecture view
 - If the template recommends one to two pages, prefer denser combined figures and tighter tables before deleting concrete implementation evidence
@@ -98,6 +100,7 @@ Prioritize these items:
 - database tables or entity relationships if the project stores data
 - workflow logic for upload, annotation, review, export, or core user tasks
 - key algorithms, model-assisted steps, or technical innovations
+- if the user already has a later draft chapter they consider acceptable, migrate its good structure and screenshots before deciding to rewrite anything
 
 Avoid:
 
@@ -111,13 +114,15 @@ A strong compact test section usually includes:
 
 - 3 to 6 representative test cases
 - at least one bug or defect and how it was corrected
-- one result table for performance, availability, usability, or deployment convenience
+- measurable results carried by prose, with tables used only when they genuinely clarify rather than bloat the section
+- one compact synthesis of performance, compatibility, and修正效果 when the template page budget is tight
 
 Avoid:
 
 - explaining what unit testing means
 - giving only "all tests passed"
 - ignoring negative or exception cases
+- stacking multiple generic tables when the same evidence would read more naturally in paragraph form
 
 ### 安装及使用
 
@@ -127,12 +132,14 @@ Include:
 - deployment or startup steps
 - default usage path
 - one typical scenario from login to result output
+- repository-backed commands, directories, and feature usage notes drawn from the real codebase, README, settings, or usage documents
 
 Avoid:
 
 - giant environment dumps
 - repeating testing content
 - omitting browser, database, GPU, or model dependency requirements when they matter
+- inventing steps that cannot be traced back to the real project repository
 
 ### 项目总结
 
