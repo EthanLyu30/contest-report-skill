@@ -55,6 +55,7 @@ Use this skill when the user asks for things like:
 - Keep the contest chapter names exactly as provided by the template unless the user explicitly asks to rename an internal heading.
 - Treat chapter title hierarchy explicitly. The main contest chapter titles such as `第一章 需求分析` and `第二章 概要设计` may remain centered, but internal subheadings should normally be left aligned. Use at most three levels, and prefer two levels when the material is not dense enough to justify deeper nesting.
 - If the user or local template expects numbered main chapters, use full chapter titles such as `第一章 需求分析` rather than bare section names.
+- Treat the chapter number prefix as part of the visible title, not as disposable decoration. If the template's automatic heading numbering makes `第一章` differ in font, size, or weight from the chapter name, replace that mechanism and render the whole title in one consistent Songti third-size style.
 - Write as the project team submitting the work, not as an outside assistant summarizing source files. Prefer `我们设计…` / `我们将平台定位为…` and avoid meta phrases such as `结合技术报告可以看出…`.
 - Prefer formal Chinese academic style over startup pitch language.
 - Translate technical novelty into score-relevant language: feasibility, completeness, innovation, workload, demonstrability, and practical value.
@@ -70,6 +71,7 @@ Use this skill when the user asks for things like:
 - Put figure and table titles below the object, and make sure the body text explicitly references them with phrases such as `如图x-x所示` or `如表x-x所示`.
 - In page-constrained chapters, do not default to equal-width table columns. Allocate width by information density so that dense explanatory columns get more space and short label columns stay narrow.
 - Keep tables as intact as possible. Avoid letting a table split across pages, and try to keep the table body and its below-caption on the same page; only allow跨页 when the content truly cannot fit after compaction.
+- When tables still look too tall, compact them in this order: shorten cell wording, reduce internal cell margins and paragraph spacing, then rebalance column widths. Do not leave a bloated table simply because the columns were adjusted once.
 - Treat explicit user or template typography requirements as hard constraints, including fonts, paragraph indentation, alignment, and spacing.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.

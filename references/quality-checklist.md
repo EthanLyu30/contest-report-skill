@@ -34,7 +34,9 @@ Run this checklist before treating a contest document as ready.
 - Any generated diagram keeps labels inside shapes and avoids chaotic arrow routing.
 - Figure and table captions are placed below the object.
 - The body text explicitly references visuals with phrases such as `如图x-x所示` or `如表x-x所示`.
+- The visible main chapter title is a single consistent unit: the `第一章` prefix and the chapter name use the same Songti sizing and weight instead of looking like two mismatched layers.
 - Table column widths are assigned by content density instead of being left at uniform default widths.
+- Tables that still look tall have also been compacted through wording, internal margins, and paragraph spacing rather than only by dragging column widths.
 - Page-constrained tables are kept as intact as possible, and table captions are not casually pushed onto the next page.
 - Paragraphs are concise and not overloaded with background theory.
 - Process descriptions read like human-written technical prose rather than AI-style `1. 2. 3.` bullet chains.
@@ -82,6 +84,7 @@ If any of these are true, the document still needs work:
 - the closing paragraph sounds like the author is speaking to the reviewer about what the chapter just did
 - the document keeps creating tiny standalone `本章小结` headings for one-sentence conclusions even under tight page limits
 - a rendered page leaves one or two stray Chinese characters hanging on the next line and no one rewrote the sentence
+- the chapter heading shows `第一章` in a visibly different font or size from the chapter name because template auto-numbering was left untouched
 - a table is split across pages mainly because column widths stayed default and no one compacted the layout
 - the table caption is stranded on the next page even though the table itself could have been compacted or moved as a whole
 - the design chapters have almost no diagrams
