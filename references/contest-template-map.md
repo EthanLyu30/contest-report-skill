@@ -83,6 +83,7 @@ Presentation rule:
 - if the workflow is written in text, explain it as a connected process paragraph instead of `1. 2. 3.` bullet fragments
 - place figure and table captions below the object and cite them in the paragraph immediately before or after
 - keep the overview section rich enough to show the real highlights: architecture, key data path, module split, and at least one clear interaction or interface clue when the materials support it
+- when the chapter is still too thin but the page budget is tight, prefer one compact synthesis paragraph that ties modules, call flow, and interface transitions together over opening another weak subsection
 - do not let `概要设计` become architecture-only; if real platform screenshots exist, they should usually appear in this chapter
 - if space is tight but several screenshots are all important, merge them into one clean combined figure rather than dropping the newer interfaces
 - after layout is rendered, scan for ugly wrap behavior; if a caption or paragraph leaves only one or two Chinese characters on a new line, rewrite the sentence or shorten the caption
@@ -162,3 +163,8 @@ Avoid:
 - generic gratitude statements
 - pure marketing language
 - repeating the introduction section
+
+## References
+
+- If the document keeps a dedicated `参考文献` chapter, add in-text citations in the正文 where the referenced method, model, or conclusion is actually invoked.
+- In Chinese contest prose, citations can be placed at the end of the relevant sentence immediately before the punctuation, for example `……取得了更稳定的结果[1-3]。`

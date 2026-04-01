@@ -80,6 +80,7 @@ Run this checklist before treating a contest document as ready.
 - User-specified formatting constraints such as Song font for Chinese, Times New Roman for English and numbers, first-line indent, paragraph spacing, and justification are actually applied where requested.
 - The PDF render has no clipped text, broken tables, or unreadable images.
 - References are in a consistent format.
+- Items listed in `第七章 参考文献` are actually cited in the body where relevant, instead of being left as an isolated bibliography with no正文引用.
 
 ## Common Failure Signals
 
@@ -104,6 +105,7 @@ If any of these are true, the document still needs work:
 - a large blank region remains before a table or figure because a hidden template page break was left in place
 - the design chapters have almost no diagrams
 - the test section is mostly hollow tables with little narrative, metrics, or defect evidence
+- the bibliography exists, but the正文 does not cite any of the listed references
 - the project summary repeats earlier chapters
 - medical or AI claims are present but data handling and human review are absent
 - the organizer's explicit font hierarchy is ignored because an older private formatting preference was followed instead
