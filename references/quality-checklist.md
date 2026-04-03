@@ -63,7 +63,9 @@ Run this checklist before treating a contest document as ready.
 - `测试报告` reads like measured validation and修正复盘, not like a stack of table shells.
 - `测试报告` may include one compact summary table or figure, but prose remains the backbone and the layout does not regress into table stacking.
 - `安装及使用` is grounded in the real code repository and usage docs instead of generic framework habits.
+- `安装及使用` uses the correct perspective: if the deliverable is describing a platform for judges or end users, the section defaults to browser access, login entry, and typical operation flow rather than Python or pip setup.
 - `安装及使用` still sounds like the team presenting its own deployment path, not like an external narrator pointing at the repository.
+- If anonymity matters, both visible content and file metadata have been checked, including Word core properties, PDF metadata, review markup, screenshots, and stray local paths.
 - `第七章 参考文献` appears before the reference entries and is not separated from them by insertion-order mistakes.
 - If each chapter starts on a new page, the previous page does not end with a single orphan line or an obviously oversized blank area that should have been compressed away.
 - Word opens in a normal reading/printing state rather than exposing leftover review markup settings from the template.
@@ -105,6 +107,7 @@ If any of these are true, the document still needs work:
 - a large blank region remains before a table or figure because a hidden template page break was left in place
 - the design chapters have almost no diagrams
 - the test section is mostly hollow tables with little narrative, metrics, or defect evidence
+- the installation chapter tells ordinary users to install Python, pip, or other developer dependencies even though the system is presented as a ready-to-use platform
 - the bibliography exists, but the正文 does not cite any of the listed references
 - the project summary repeats earlier chapters
 - medical or AI claims are present but data handling and human review are absent
@@ -112,6 +115,7 @@ If any of these are true, the document still needs work:
 - the document claims to follow `宋体/黑体` organizer rules, but Word still shows `SimSun`-style leftovers or mixed western fonts because the runs were only half-updated
 - the table style name says there should be borders, but the rendered PDF still looks borderless
 - installation steps look plausible but cannot be traced back to the real repository, README, settings, or usage guide
+- anonymity was only judged by the cover page, while Word/PDF metadata or screenshot details still leak identity
 - the back half of the report becomes text-only even though the running system could have supplied real screenshots
 - a forced chapter page break leaves the previous page with a dangling last line or a large avoidable blank block
 - Word opens with review markup turned on even though the final deliverable is meant for ordinary reading

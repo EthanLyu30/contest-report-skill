@@ -83,6 +83,7 @@ Use this skill when the user asks for things like:
 - If the official format says `正文五号宋体` or similar, apply that font family consistently to the final visible runs instead of keeping a half-overridden style that still shows `SimSun` or mixed western fonts in Word.
 - When Word still appears to show a `SimSun`-style alias after restyling, clear theme-font residue and verify the reopened `Normal` and heading styles carry explicit `宋体/黑体` rFonts rather than assuming the first save was enough.
 - When the source draft already contains a later chapter the user considers acceptable, migrate its substance, figures, and structure into the current version instead of rewriting it from scratch.
+- When a teacher or organizer raises anonymity concerns, inspect both visible content and file metadata. Cover-page blanks are not enough; also check Word core properties, PDF metadata, review markup state, and any accidental personal identifiers in screenshots or repository paths.
 - Unless the user explicitly wants spacing for readability, do not leave extra spaces between Chinese and adjacent English, numbers, or symbols in the final Chinese prose.
 - Do not let 概要设计 become too thin. It should surface the real high-level technical focus, not just repeat one architecture paragraph and one module table.
 - Do not let a section become "title-only". `需求分析` should usually close with a short summary paragraph that gathers the chapter's argument, and `概要设计` should usually show more than one kind of evidence when the source documents allow it.
@@ -96,8 +97,10 @@ Use this skill when the user asks for things like:
 - If the project has two members or clear module ownership, make the module boundaries and interface boundaries visible enough to support later evaluation.
 - Do not let `测试报告` degrade into a pile of weak tables. When measured data and修正记录 are available, weave them into natural prose so the section reads like real engineering validation.
 - `测试报告` can still include one compact summary table or figure when that improves readability, but the section should not collapse back into table stacking.
-- When writing `安装及使用`, ground every command, dependency, and path in the real code repository, README, settings, and feature usage notes. Do not invent deployment steps from generic project habits.
+- When writing `安装及使用`, first decide whose perspective the template expects. If the document is introducing a delivered platform to judges or end users, default to browser access, login entry, and typical operation flow rather than developer deployment commands such as Python or pip installation.
+- Only describe repository-level commands, dependencies, and paths in `安装及使用` when the template clearly expects deployment guidance. Otherwise, keep those details behind the scenes and present a user-facing usage path.
 - Even when installation content is derived from the repository, the wording should still sound like the project team submitting the work, not like an assistant explaining what the repository contains.
+- Under strict page limits, chapters 4 to 6 should usually be strengthened by improving perspective and information density, not by simply adding length. A compact metrics figure in `测试报告`, a user-side flow table in `安装及使用`, and one synthesis table in `项目总结` are often better than longer prose blocks.
 - When the later chapters feel visually thin, supplement them with screenshots from the real running system, such as actual page renders, logged-in interfaces, and startup terminal captures, instead of leaving the back half of the document as pure text.
 - If a terminal screenshot is used, crop it to the meaningful runtime output region so window chrome, stray side panels, or unrelated console noise do not weaken the delivery.
 - Make sure the structural order remains correct after automated insertion. Headings such as `第七章 参考文献` must appear before their entries rather than being stranded after them.
