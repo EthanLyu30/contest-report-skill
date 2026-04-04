@@ -9,6 +9,7 @@ Run this checklist before treating a contest document as ready.
 - The document feels like a competition submission, not an enterprise specification dump.
 - If the organizer has explicit formatting rules, those rules override older default formatting preferences and are reflected in the final docx and PDF.
 - If the organizer specifies `正文宋体、标题黑体` or a similar pure-font hierarchy, the final visible runs in Word actually reflect that hierarchy instead of preserving an older mixed-font convention.
+- If the organizer's rule targets Chinese typography rather than every character, Chinese runs follow `宋体/黑体` while English letters and numbers remain in `Times New Roman`.
 
 ## Content Quality
 
@@ -33,6 +34,7 @@ Run this checklist before treating a contest document as ready.
 
 - Figures and tables are readable and actually support the argument.
 - Figures preferably come from the user's real source materials when good source visuals are available.
+- Later chapters do not casually reuse the exact same screenshot from earlier chapters when a different task page, state, crop, or companion interface would communicate new information more clearly.
 - Any generated diagram keeps labels inside shapes and avoids chaotic arrow routing.
 - Figure and table captions are placed below the object.
 - The body text explicitly references visuals with phrases such as `如图x-x所示` or `如表x-x所示`.
@@ -46,6 +48,7 @@ Run this checklist before treating a contest document as ready.
 - Summary paragraphs do not rely on stiff formulaic connector chains such as repeated `首先` / `然后` / `最后` or `一是` / `二是` / `三是`.
 - Section endings do not sound like the writer is talking to the reader about the act of writing.
 - The narrative voice sounds like the submitting team speaking for the project, not like an AI or reviewer summarizing source materials.
+- The document does not contain meta-writing explanations such as why a figure or table was inserted, or references to source-doc choices like `结合AIC材料可以看出` or `为了让本节更贴近实际操作`.
 - Chinese prose does not contain unnecessary spaces next to adjacent English, numbers, or symbols.
 - Diagrams use consistent labels with the text.
 - Screenshots reflect the real system instead of placeholder mockups when possible.

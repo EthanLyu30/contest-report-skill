@@ -18,7 +18,7 @@ Use this file when drafting or revising any section of a Chinese university soft
 Honor these defaults unless the user or a newer organizer template overrides them:
 
 - If the organizer gives explicit document formatting rules, those rules override earlier house preferences for fonts, title hierarchy, or spacing
-- If those rules specify pure `宋体/黑体` usage, do not preserve an older mixed-font habit for English and numbers in the final visible text
+- If the organizer specifies a Chinese font hierarchy such as `正文宋体、标题黑体`, apply that hierarchy to Chinese runs while keeping English letters and numbers in `Times New Roman`, unless the organizer explicitly requires a pure single-font document
 
 - `需求分析`: keep it compact but not skeletal; if the source materials already support stronger argumentation, it is better to add one more solid paragraph or summary than to leave the chapter hollow
 - `概要设计`: prefer figures over long prose, but do not compress it so far that only one architecture figure and one module table remain; when the project has usable interface screenshots, let them share the load with the architecture view
@@ -86,6 +86,7 @@ Presentation rule:
 - when the chapter is still too thin but the page budget is tight, prefer one compact synthesis paragraph that ties modules, call flow, and interface transitions together over opening another weak subsection
 - do not let `概要设计` become architecture-only; if real platform screenshots exist, they should usually appear in this chapter
 - if space is tight but several screenshots are all important, merge them into one clean combined figure rather than dropping the newer interfaces
+- do not reuse the exact same screenshot in multiple later chapters unless the comparison itself is the point; if an interface must recur, switch to a different crop, state, or companion screen so each figure carries distinct information
 - after layout is rendered, scan for ugly wrap behavior; if a caption or paragraph leaves only one or two Chinese characters on a new line, rewrite the sentence or shorten the caption
 - if the chapter ends with only a brief收束段, merge it into the end of the section instead of adding a standalone `本章小结` heading
 
@@ -140,6 +141,7 @@ Include:
 - repository-backed commands, directories, and feature usage notes drawn from the real codebase, README, settings, or usage documents
 - when possible, include screenshots from the real running project, such as the landing page, login page, workbench, or startup terminal, so the section documents an actual executable state rather than a purely textual setup path
 - wording that still sounds like the submitting team documenting its own system rather than an assistant describing repository contents
+- final prose should describe the system directly and must not explain the writing choice itself with sentences like `为了让用户侧说明更贴近真实操作...` or `结合某报告材料可以看出...`
 
 Avoid:
 
